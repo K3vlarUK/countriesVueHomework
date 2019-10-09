@@ -1,10 +1,12 @@
 <template lang="html">
   <div>
     <h1>Countries App</h1>
+    <h3>Select a country to find out more</h3>
     <div class="page-container">
       <div class="country-list">
         <country-select :countries="countries"></country-select>
       </div>
+      <br>
       <div class="country-info">
         <country-detail :country="selectedCountry"></country-detail>
       </div>
@@ -42,23 +44,36 @@ export default {
 </script>
 
 <style lang="css" scoped>
-h1 {
-  text-align: center;
-}
 
 .page-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.country-list {
-  flex: 50%;
-  align-content: center;
+body {
+  background-color: ghostWhite;
 }
 
 .country-info {
-  flex: 50%;
-  align-content: center;
+  background-color: aliceBlue;
+  padding: 2rem;
+  border: 2px solid black;
 }
+
+h1 {
+  text-align: center;
+  background-color: aliceBlue;
+  color: navy;
+  padding: 2rem;
+  margin: -0.5rem;
+  border-bottom: 2px solid black;
+  font-style: helvetica;
+}
+
+h3 {
+  text-align: center;
+  font-style: helvetica;
+}
+
 </style>

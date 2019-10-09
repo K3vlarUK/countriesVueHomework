@@ -4,6 +4,12 @@
     <h3>{{ country.name }}</h3>
     <p>Population: {{ country.population }}</p>
     <p>Capital City: {{ country.capital }}</p>
+    <p>Spoken Languages</p>
+    <ul>
+      <li v-for="language in country.languages">
+        {{ language.name }}
+      </li>
+    </ul>
   </div>
 </template>
 
