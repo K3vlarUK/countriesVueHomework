@@ -59,6 +59,7 @@ body {
   background-color: aliceBlue;
   padding: 2rem;
   border: 2px solid black;
+  text-align: justify;
 }
 
 h1 {
